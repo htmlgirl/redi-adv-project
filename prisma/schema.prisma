@@ -71,3 +71,51 @@ model Movie {
   genre       String
   duration    String
 }
+
+// [
+//     {
+//         "_id": { "$oid": "674b6cfb72b1e10d8cd6e309" },
+//         "title": "The Shawshank Redemption",
+//         "description": "Two imprisoned men bond over years in a quest for freedom.",
+//         "videoUrl": "https://www.youtube.com/watch?v=6hB3S9bIaco",  // Trailer
+//         "thumnailUrl": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",  // Poster
+//         "genre": "Drama",
+//         "duration": "2h 22m"
+//     },
+//     {
+//         "_id": { "$oid": "674b6cfb72b1e10d8cd6e30a" },
+//         "title": "Pulp Fiction",
+//         "description": "The lives of two mob hitmen and others intertwine in a series of events.",
+//         "videoUrl": "https://www.youtube.com/watch?v=s7EdQ4FqbhY",  // Trailer
+//         "thumnailUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg",  // Poster
+//         "genre": "Crime",
+//         "duration": "2h 34m"
+//     },
+//     {
+//         "_id": { "$oid": "674b6cfb72b1e10d8cd6e30b" },
+//         "title": "The Lion King",
+//         "description": "A young lion prince flees his kingdom only to return to reclaim it.",
+//         "videoUrl": "https://www.youtube.com/watch?v=7TavVZMewpY",  // Trailer
+//         "thumnailUrl": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",  // Poster
+//         "genre": "Animation",
+//         "duration": "1h 58m"
+//     },
+//     {
+//         "_id": { "$oid": "674b6cfb72b1e10d8cd6e30c" },
+//         "title": "Gladiator",
+//         "description": "A former Roman general seeks revenge against the corrupt emperor.",
+//         "videoUrl": "https://www.youtube.com/watch?v=owK1qxDselE",  // Trailer
+//         "thumnailUrl": "https://upload.wikimedia.org/wikipedia/en/8/8d/Gladiator_ver1.jpg",  // Poster
+//         "genre": "Action",
+//         "duration": "2h 35m"
+//     },
+//     {
+//         "_id": { "$oid": "674b6cfb72b1e10d8cd6e30d" },
+//         "title": "Titanic",
+//         "description": "A love story unfolds aboard the ill-fated Titanic.",
+//         "videoUrl": "https://www.youtube.com/watch?v=kVrqfYjkTdQ",  // Trailer
+//         "thumnailUrl": "https://upload.wikimedia.org/wikipedia/en/2/22/Titanic_poster.jpg",  // Poster
+//         "genre": "Romance",
+//         "duration": "3h 15m"
+//     }
+// ]

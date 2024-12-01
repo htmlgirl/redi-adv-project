@@ -25,11 +25,11 @@ const Navbar = () => {
                     {/* Desktop Menu Items */}
                     <div className="hidden md:flex space-x-6">
                         <NavbarItem label="Home" />
-                        <NavbarItem label="Series" />
-                        <NavbarItem label="Films" />
-                        <NavbarItem label="New and Popular" />
                         <NavbarItem label="My List" />
-                        <NavbarItem label="Browse by Languages" />
+                        <NavbarItem label="Button" />
+                        <NavbarItem label="Button" />
+                        <NavbarItem label="Button" />
+                        <NavbarItem label="Button" />
                     </div>
 
                     {/* Mobile Menu Toggle */}
