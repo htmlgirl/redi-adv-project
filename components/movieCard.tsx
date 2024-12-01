@@ -1,7 +1,6 @@
 import React from "react";
 import {BsFillPlayFill} from "react-icons/bs";
 import FavoriteButton from "@/components/favoriteButton";
-// import PlayButton from "@/components/playButton";
 import {useRouter} from "next/router";
 import {router} from "next/client";
 
@@ -17,7 +16,7 @@ interface MovieCardProps {
     };
 }
 
-const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
+const MovieCard: React.FC<MovieCardProps> = ({data}) => {
     const router = useRouter();
     return (
         <div
@@ -32,19 +31,17 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                 <p className="text-sm text-slate-300 mt-2">{data.genre} • {data.duration}</p>
                 <p className="text-sm text-slate-400 mt-4">{data.description}</p>
             </div>
+            <div className="flex items-center space-x-4">
+                <div onClick={() => router.push(`watch/${data.id}`)}
+                     className="cursor-pointer mb-4 w-14 mr-0 h-14 mx-4 bg-violet-600 rounded-full flex items-center justify-center hover:bg-violet-700 transition-all duration-200">
+                    <BsFillPlayFill className="text-white" size={30}/>
+                </div>
+                <FavoriteButton movieId={data?.id}/>
 
-            <div onClick={() => router.push(`watch/${data.id}`)}
-                 className="cursor-pointer mb-4 w-14 h-14 mx-4 bg-violet-600 rounded-full flex items-center justify-center hover:bg-violet-700 transition-all duration-200">
-                <BsFillPlayFill className="text-white" size={30}/>
             </div>
-            <div>
-                <FavoriteButton movieId={data?.id} />
-            </div>
-
-
-
         </div>
     );
 };
 
 export default MovieCard;
+
