@@ -2,8 +2,6 @@ import {NextApiRequest, NextApiResponse } from "next";
 import prismadb from "@/lib/prismadb";
 import serverAuth from "@/lib/serverAuth";
 import {without} from "lodash";
-import {mockSession} from "next-auth/client/__tests__/helpers/mocks";
-import user = mockSession.user;
 
 
 export default async function handler (req: NextApiRequest, res: NextApiResponse){
