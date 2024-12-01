@@ -3,8 +3,6 @@ import Input from "../components/input";
 import {useCallback, useState} from "react";
 import {signIn} from "next-auth/react";
 
-import {FcGoogle} from "react-icons/fc";
-import {FaGithub} from "react-icons/fa";
 
 const Auth = () => {
 
@@ -81,18 +79,6 @@ const Auth = () => {
                         <button onClick={option === 'login' ? login : register} className={"transition w-full text-xl px-3 py-3 flex justify-center mt-5 text-violet-200 rounded-md bg-violet-800 hover:bg-violet-600 focus:outline-none"}>
                             {option === "login" ? "Login" : "Sing in"}
                         </button>
-                        <div className={"flex flex-row items-center justify-center gap-4 mt-8"}>
-                            <div
-                                onClick={() => signIn('google', {callbackUrl: '/profiles'} )}
-                                className={"flex items-center justify-center w-10 h-10 bg-white rounded-full cursor-pointer hover:opacity-80 transition"}>
-                                <FcGoogle size={30}></FcGoogle>
-                            </div>
-                            <div
-                                onClick={() => signIn('github', {callbackUrl: '/profiles'} )}
-                                className={"flex items-center justify-center w-10 h-10 bg-white rounded-full cursor-pointer hover:opacity-80 transition"}>
-                                <FaGithub size={30}></FaGithub>
-                            </div>
-                        </div>
                         <div className={"text-base mt-5 text-slate-300 "}>
                             {option === "login" ? "Are you still not registered??" : "Have you registered yet?"}
                             <div onClick={toggleOptions} className={"text-violet-600 cursor-pointer hover:underline"}>

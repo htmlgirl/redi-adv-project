@@ -23,14 +23,14 @@ export async function getServerSideProps(context: NextPageContext) {
 export default function Home() {
 
     const {data: movies = []} = useMovieList()
-    // const {data:favorites = []} = useFavorites()
+    const {data:favorites = []} = useFavorites()
 
   return (
     <>
       <Navbar />
         <div>
             <MovieList title="Trending Now" data={movies}/>
-            {/*<MovieList title="My List" data={favorites}/>*/}
+            <MovieList title="My List" data={favorites}/>
         </div>
 
     </>
