@@ -1,4 +1,5 @@
 import React from 'react';
+import { Film } from '@/data/defaultFilms';
 
 const FilmCard = ({ film, onDelete }: { film: Film, onDelete: (id: number) => void }) => {
     const handleDelete = () => onDelete(film.id);
