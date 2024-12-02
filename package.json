@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "reinstall": "rm -rf node_modules && npm cache clean --force && npm i"
   },
   "dependencies": {
     "dayjs": "^1.11.13",
