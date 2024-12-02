@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import FilmList from '@/components/FilmList';
 import FilmForm from '@/components/FilmForm';
 import SortMenu from '@/components/SortMenu';
@@ -61,8 +61,9 @@ const Home = () => {
 
   return (
       <div className="bg-blue-50 min-h-screen">
-        <h1 className="bg-blue-300 text-white text-4xl text-center py-6 shadow-lg">Film Manager</h1>
+        <h1 className="bg-blue-400 text-white text-4xl text-center py-6 shadow-lg">Movie wishlist</h1>
         <FilmForm onSubmit={addFilm}/>
+        <div className="text-center text-4xl font-medium text-blue-400">Wished movie</div>
         <SortMenu sortType={sortType} onSortChange={setSortType}/>
         <FilmList films={sortedFilms} onDelete={setFilmToDelete}/>
         {filmToDelete !== null && (

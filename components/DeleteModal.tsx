@@ -1,7 +1,7 @@
 const DeleteModal = ({ onConfirm, onCancel }: { onConfirm: () => void, onCancel: () => void }) => {
     return (
         <div className="modal-overlay fixed inset-0 bg-blue-900 bg-opacity-50 flex justify-center items-center">
-            <div className="modal bg-blue-100 p-6 rounded-lg shadow-xl w-1/3">
+            <div className="modal bg-blue-100 p-6 rounded-lg shadow-xl xl:w-1/3 lg:w-1/2 sm:w-1/1">
                 <h3 className="text-xl font-semibold text-blue-800 mb-4">Are you sure you want to delete this film?</h3>
                 <div className="flex justify-end space-x-4">
                     <button

@@ -28,6 +28,7 @@ const FilmForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
 
     return (
         <form onSubmit={handleSubmit} id="film_form" className="max-w-lg mt-20 mb-20 mx-auto p-6 bg-blue-50 rounded-lg shadow-lg space-y-6">
+            <h2 className="text-2xl font-medium text-blue-400">Please add your movies here</h2>
             <div>
                 <label htmlFor="title" className="block text-sm font-semibold text-blue-900">Title</label>
                 <input

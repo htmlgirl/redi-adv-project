@@ -1,13 +1,13 @@
 import React from 'react';
 
-const SortMenu = ({ sortType, onSortChange }: { sortType: string; onSortChange: (value: string) => void }) => {
+const SortMenu = ({sortType, onSortChange}: { sortType: string; onSortChange: (value: string) => void }) => {
     const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         onSortChange(e.target.value);
     };
 
     return (
-        <div className="sort-menu flex items-center space-x-4 bg-blue-50 p-4 rounded-lg shadow-lg">
-            <label htmlFor="sort" className="text-sm font-medium text-gray-800">Sort By:</label>
+        <div className="sort-menu flex items-center justify-end space-x-4 bg-blue-50 p-4 rounded-lg shadow-lg">
+            <label htmlFor="sort" className="text-sm items-center font-medium text-gray-800">Sort By:</label>
             <select
                 id="sort"
                 value={sortType}
@@ -25,5 +25,3 @@ const SortMenu = ({ sortType, onSortChange }: { sortType: string; onSortChange: 
 };
 
 export default SortMenu;
-
-
