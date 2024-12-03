@@ -8,7 +8,7 @@ import { defaultFilms, Film } from '@/data/defaultFilms';
 
 
 const Home = () => {
-  // Стейт для фильмов, типа строка для сортировки, и ID фильма для удаления
+  // Coстояние для фильмов, типа строка для сортировки, и ID фильма для удаления
   const [films, setFilms] = useState<Film[]>([]);
   const [sortType, setSortType] = useState<string>('default');
   const [filmToDelete, setFilmToDelete] = useState<number | null>(null);
