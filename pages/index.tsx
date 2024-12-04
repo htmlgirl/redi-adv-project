@@ -5,6 +5,7 @@ import SortMenu from '@/components/SortMenu';
 import DeleteModal from "@/components/DeleteModal";
 import { richDate } from '@/utils/richDate';
 import { defaultFilms, Film } from '@/data/defaultFilms';
+import Header from "@/components/Header";
 
 
 const Home = () => {
@@ -61,7 +62,7 @@ const Home = () => {
 
   return (
       <div className="bg-blue-50 min-h-screen">
-        <h1 className="bg-blue-400 text-white text-4xl text-center py-6 shadow-lg">Movie wishlist</h1>
+        <Header />
         <FilmForm onSubmit={addFilm}/>
         <div className="text-center text-4xl font-medium text-blue-400">Wished movie</div>
         <SortMenu sortType={sortType} onSortChange={setSortType}/>
